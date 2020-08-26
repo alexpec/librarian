@@ -31,9 +31,9 @@ class News(object):
 
 	Methods
 	-------
-	save(filename, io_pipeline)
+	save(io_pipeline)
 		Saves the news using the specified io pipeline
-	load(filename, io_pipeline)
+	load(io_pipeline)
 		Loads the news using the specified io pipeline
 
 	'''
@@ -49,6 +49,12 @@ class News(object):
 
 
 	def __init__(self):
+		'''
+		Parameters
+		----------
+		
+		'''
+
 		self.published_date = None
 		self.updated_date = None
 		self.vehiacle = None
@@ -57,3 +63,16 @@ class News(object):
 		self.summary = None
 		self.news = None
 		self.author = None
+
+
+	def save(self, io_pipeline):
+		'''
+		Saves the class into a pipeline (database, file, rest get method, etc)
+
+
+		Parameters
+		----------
+		io_pipeline: IPipeline
+			The pipeline which will be used to save the data in the class
+		'''
+		pass
