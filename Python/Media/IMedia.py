@@ -11,7 +11,7 @@ class IMedia(object):
 
 	Properties
 	----------
-    extraction_date: timestae
+    extraction_date: timedate
         timedate of when the data entered our system
 	vehiacle: str
 		string of the name of newsfeed vehiacle
